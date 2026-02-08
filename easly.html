@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sample</title>
+<body style="background-color:4CAF50">
+<!-- ICONS -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ===== GLOBAL ===== */
+*{
+  margin:10;
+  padding:40;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+body{
+  background:radial-gradient(#222,#0000ff);
+  color:#F2F2F2;
+}
+
+/* ===== HEADER ===== */
+.topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:left;
+  padding:15px 30px;
+  background:#000;
+  border-bottom:1px solid #222;
+}
+.logo{
+  font-size:26px;
+  font-weight:bold;
+  color:red;
+}
+.logo span{color:gold;}
+
+.nav{
+  display:flex;
+  gap:25px;
+}
+.nav a{
+  color:#ccc;
+  text-decoration:none;
+  font-size:13px;
+  text-align:center;
+  }
+.nav:hover{
+  background-color: blue;
+
+}
+}
+.nav i{
+  display:block;
+  font-size:20px;
+  margin-left:30px;
+}
+.nav:hover{
+  background-color: blue;
+
+}
+.lang{
+  font-size:14px;
+  color:#cccc;
+}
+
+/* ===== LOGIN BAR ===== */
+.login-title{
+  background:#2b2b2b;
+  padding:12px 30px;
+  font-size:16px;
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+/* ===== LOGIN BOX ===== */
+.container{
+  display:flex;
+  justify-content:center;
+  margin-top:80px;
+  background-color: #4CAF50;
+}
+.login-box{
+  width:360px;
+  background:#1c1c1c;
+  padding:25px;
+  border-radius:6px;
+  border-color: blue;
+  box-shadow:0 0 20px rgba(0,0,0,.7);
+}
+label{
+  font-size:14px;
+  color:#ccc;
+}
+.input-group{
+  display:flex;
+  align-items:center;
+  background:#000;
+  border:1px solid #333;
+  border-radius:91px;
+  margin:8px 0;
+}
+.input-group input{
+  flex:1;
+  background:none;
+  border:none;
+  outline:none;
+  padding:12px;
+  color:#fff;
+}
+.prefix{
+  padding:12px;
+  border-right:1px solid #333;
+}
+.input-group i{
+  padding:12px;
+  color:#aaa;
+  cursor:pointer;
+}
+.note{
+  font-size:12px;
+  color:#aaa;
+  margin-bottom:15px;
+}
+.note a{
+  color:#3da9ff;
+  text-decoration:none;
+}
+.btn-login{
+  width:100%;
+  padding:12px;
+  background:#1aa31a;
+  border-color:yellow;
+  border-radius:91px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+}
+.btn-login:hover{
+  background:blue;
+}
+.register{
+  text-align:center;
+  margin-top:15px;
+  font-size:14px;
+}
+.register a{
+  color:#3da9ff;
+  text-decoration:none;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:600px){
+  .nav{display:none;}
+  .login-box{width:90%;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+  <div class="logo"><EM>💻I<sub>C</sub>T <u>Platform</u></EM><span></span></div>
+  <nav class="nav">
+    <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+    <a href="chatgpt.html"><i class="fa-solid fa-bars"></i>Logo</a>
+    <a href="#"><i class="fa-solid fa-futbol"></i>play</a>
+    <a href="my AI.html"><i class="fa-solid fa-circle-play"></i>New AI 🤖</a>
+    <a href="#"><i class="fa-solid fa-dice"></i>Make a Copy 📚</a>
+    <a href="mycarmoves.html"><i class="fa-solid fa-plane"></i>Drive your Car 🚗</a>
+    <a href="rwandanp.html"><i class="fa-solid fa-ellipsis"></i>More
+    ...</a>
+  </nav><br>
+<select>
+  <option>no Lang choosen</option>
+  <option>English</option>
+  <option>Chinise</option>
+  <option>French</option>
+  <option>Kinyarwanda</option>
+  <option>Other</option>
+</select>
+</header>
+
+<!-- LOGIN TITLE -->
+<div class="login-title">
+  <i class="fa-solid fa-arrow-left"></i> LOGIN
+</div>
+
+<!-- LOGIN CARD -->
+<div class="container">
+  <div class="login-box">
+<h2><marquee direction="left"SCROLLAMOUNT="15"><u><em>Welcome to this Platform </marquee></h2>
+    <label><p style="color:gold">Country</p></label>
+    <div class="input-group">
+      <SELECT>
+        <option>none</option>
+        <option>UG+91</option>
+        <option>USA+1</option>
+        <option>CHN+86</option>
+        <option>Rw+250</option>
+      </SELECT>
+      <input type="text" placeholder="Phone number,ex:793868332">
+    </div>
+    <div class="note"><em><b>With this number you provide above , I'm able to call you!</b></em></div>
+     <a href="withbkd.html"><em><u><p style="color:blue">Forgot Phone number?</p></u></em></a>
+    <label><p style="color:gold">Password</p></label>
+    <div class="input-group">
+      <input type="password" id="password" placeholder="Password,ex:pass.2026">
+      <i class="fa-solid fa-eye-slash" onclick="togglePassword(this)"></i>
+    </div>
+    <div class="note">
+      Min. 10 Characters for password(Letters and Numbers)
+      <a href="#"><em><u>Forgot Password?</u></em></a>
+    </div>
+
+    <button class="btn-login" onclick="login()">★ ★ ★ ★ LOGIN ★ ★ ★ ★</button>
+
+    <p class="register">
+      Don't have an account? <a href="#">REGISTER</a>
+    </p>
+
+  </div>
+</div>
+
+<script>
+/* SHOW / HIDE PASSWORD */
+function togglePassword(icon){
+  const pass = document.getElementById("password");
+  if(pass.type === "password"){
+    pass.type = "text";
+    icon.classList.replace("fa-eye-slash","fa-eye");
+  }else{
+    pass.type = "password";
+    icon.classList.replace("fa-eye","fa-eye-slash");
+  }
+}
+
+/* FAKE LOGIN (Frontend only) */
+function login(){
+  alert("Hk Developer said that (FILL WHERE NECESSARY)");
+}
+
+</script>
+<h3><em><marquee direction="left">Thanks 👍 for your Info ★ ★ ★</marquee></em> </h3>
+<fieldset>
+<h5><center>If you finish to fill the login form above ,you're gonna to get more info about what we call <em><b><u><p style="color:gold">Software Development</p></u></b></em>and being able to <em><p style="color:gold"><u>Apply </u></p>at different Organisation for getting more employment to gain your profit for using at the future time </em></center>
+</h5></fieldset>
+</body>
+</html>
